@@ -11,7 +11,7 @@ app.listen(PORT,() =>{
     console.log(`Server started on port 3000`);
 })
 
-db.sequelize.authenticate()
+db.sequelize.sync()
     .then((result) => {
         app.listen(3000, () => {
             console.log("Server Started");
